@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sign_none">
+        Road sign: None
+    </string>
+    <string name="environmental_badges_content_description_green">
+        Road sign: Free for vehicles with green environmental badges
+    </string>
+    <string name="environmental_badges_content_description_yellow_green">
+        Road sign: Free for vehicles with yellow and green environmental badges
+    </string>
+    <string name="environmental_badges_content_description_red_yellow_green">
+        Road sign: Free for vehicles with red, yellow and green environmental badges
+    </string>
+    <string name="diesel_prohibition_cars_free_until_euro_5_v_open_for_residents">
+        Road sign: Prohibition for motor vehicles, Diesel until Euro 5/V, open for residents
+    </string>
+    <string name="diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg">
+        Road sign: Prohibition for heavy goods vehicles, Diesel until Euro V, open for residents
+    </string>
+    <string name="diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart">
+        Road sign: Diesel (except delivery vehicles) as of Euro 5/V free
+    </string>
+
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sign_none">
+        Strassenschild: Keins
+    </string>
+    <string name="environmental_badges_content_description_green">
+        Strassenschild: Frei für Fahrzeuge mit grünen Umweltplaketten
+    </string>
+    <string name="environmental_badges_content_description_yellow_green">
+        Strassenschild: Frei für Fahrzeuge mit gelben und grünen Umweltplaketten
+    </string>
+    <string name="environmental_badges_content_description_red_yellow_green">
+        Strassenschild: Frei für Fahrzeuge mit roten, gelben und grünen Umweltplaketten
+    </string>
+    <string name="diesel_prohibition_cars_free_until_euro_5_v_open_for_residents">
+        Strassenschild: Verbot für Kraftwagen, Diesel bis Euro 5/V, Anlieger frei
+    </string>
+    <string name="diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg">
+        Strassenschild: Verbot für LKWs, Diesel bis Euro V, Anlieger frei
+    </string>
+    <string name="diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart">
+        Strassenschild: Diesel (außer Lieferverkehr) erst ab Euro 5/V frei
+    </string>
+
+</resources>

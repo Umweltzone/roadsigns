@@ -1,0 +1,28 @@
+import info.metadude.kotlin.library.roadsigns.Plugins
+
+apply from: rootProject.file("gradle/versions.gradle")
+
+buildscript {
+
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        classpath Plugins.android
+        classpath Plugins.androidMavenPublish
+        classpath Plugins.bintray
+        classpath Plugins.kotlin
+        classpath Plugins.versions
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}

@@ -1,0 +1,35 @@
+import info.metadude.kotlin.library.roadsigns.Android
+import info.metadude.kotlin.library.roadsigns.Libs
+
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+
+android {
+    compileSdkVersion Android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion Android.minSdkVersion
+        targetSdkVersion Android.targetSdkVersion
+        versionCode Integer.valueOf(project.versionCode)
+        versionName project.versionName
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+    }
+}
+
+dependencies {
+    implementation Libs.kotlinStdlib
+    implementation Libs.Support.annotations
+    implementation Libs.Support.constraintLayout
+    implementation Libs.Support.vectorDrawable
+}
+
+apply from: rootProject.file("gradle/deploy.gradle")
