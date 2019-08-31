@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Umweltzone/roadsigns.svg?branch=master)](https://travis-ci.org/Umweltzone/roadsigns) [![Download](https://api.bintray.com/packages/tbsprs/maven/roadsigns/images/download.svg)](https://bintray.com/tbsprs/maven/roadsigns/_latestVersion) [![Apache License](http://img.shields.io/badge/license-Apache%20License%202.0-lightgrey.svg)](http://choosealicense.com/licenses/apache-2.0/) [![JitPack](https://jitpack.io/v/Umweltzone/roadsigns.svg)][jitpack-roadsigns]
+[![Build Status](https://travis-ci.org/Umweltzone/roadsigns.svg?branch=master)](https://travis-ci.org/Umweltzone/roadsigns) [![JCenter](https://api.bintray.com/packages/tbsprs/maven/roadsigns/images/download.svg)](https://bintray.com/tbsprs/maven/roadsigns/_latestVersion) [![Apache License](http://img.shields.io/badge/license-Apache%20License%202.0-lightgrey.svg)](http://choosealicense.com/licenses/apache-2.0/) [![JitPack](https://jitpack.io/v/Umweltzone/roadsigns.svg)][jitpack-roadsigns]
 
 # Road signs library
 
