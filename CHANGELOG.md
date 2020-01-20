@@ -7,6 +7,7 @@
 
 ### Changes
 
+* This version is based on support library 28.0.0.
 * This version is based on Kotlin 1.3.61.
 
 
