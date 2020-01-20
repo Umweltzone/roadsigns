@@ -8,7 +8,7 @@ object Android {
     const val targetSdkVersion = 27
 }
 
-private const val kotlinVersion = "1.3.50"
+private const val kotlinVersion = "1.3.61"
 
 object Plugins {
 
