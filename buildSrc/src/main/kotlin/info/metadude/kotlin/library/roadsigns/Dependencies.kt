@@ -3,20 +3,20 @@
 package info.metadude.kotlin.library.roadsigns
 
 object Android {
-    const val compileSdkVersion = 27
+    const val compileSdkVersion = 28
     const val minSdkVersion = 14
-    const val targetSdkVersion = 27
+    const val targetSdkVersion = 28
 }
 
-private const val kotlinVersion = "1.3.50"
+private const val kotlinVersion = "1.3.61"
 
 object Plugins {
 
     private object Versions {
-        const val android = "3.5.0"
-        const val androidMavenPublish = "3.6.2"
+        const val android = "3.5.3"
+        const val androidMavenPublish = "3.6.3"
         const val bintray = "1.8.4"
-        const val versions = "0.23.0"
+        const val versions = "0.27.0"
     }
 
     const val android = "com.android.tools.build:gradle:${Versions.android}"
@@ -32,7 +32,7 @@ object Libs {
         const val constraintLayout = "1.1.3"
         const val espresso = "3.0.2"
         const val rules = "1.0.2"
-        const val supportLibrary = "27.1.1"
+        const val supportLibrary = "28.0.0"
     }
 
     const val kotlinStdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
