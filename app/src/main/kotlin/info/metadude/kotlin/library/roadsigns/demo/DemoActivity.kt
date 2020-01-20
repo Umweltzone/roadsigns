@@ -33,7 +33,7 @@ class DemoActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         roadSignView.type = item.roadSignType
     }
 
-    override fun onNothingSelected(parent: AdapterView<*>) {}
+    override fun onNothingSelected(parent: AdapterView<*>) = Unit
 
     private val String.roadSignType: RoadSign.Type
         get() {
