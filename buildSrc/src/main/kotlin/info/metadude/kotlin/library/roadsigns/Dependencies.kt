@@ -16,7 +16,7 @@ object Plugins {
         const val android = "3.5.0"
         const val androidMavenPublish = "3.6.2"
         const val bintray = "1.8.4"
-        const val versions = "0.23.0"
+        const val versions = "0.27.0"
     }
 
     const val android = "com.android.tools.build:gradle:${Versions.android}"
