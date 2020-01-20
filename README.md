@@ -48,7 +48,7 @@ build the sources directly from [this repository][github-roadsigns].
 
 ## License
 
-    Copyright 2019 Tobias Preuss
+    Copyright 2019-2020 Tobias Preuss
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
