@@ -29,26 +29,29 @@ object Plugins {
 object Libs {
 
     private object Versions {
+        const val annotation = "1.1.0"
+        const val appCompat = "1.1.0"
         const val constraintLayout = "1.1.3"
-        const val espresso = "3.0.2"
-        const val rules = "1.0.2"
-        const val supportLibrary = "28.0.0"
+        const val espresso = "3.2.0"
+        const val rules = "1.2.0"
+        const val testExtJunit = "1.1.1"
+        const val vectorDrawable = "1.1.0"
     }
 
     const val kotlinStdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
 
     object Support {
 
-        const val annotations = "com.android.support:support-annotations:${Versions.supportLibrary}"
-        const val appcompatV7 = "com.android.support:appcompat-v7:${Versions.supportLibrary}"
-        const val constraintLayout = "com.android.support.constraint:constraint-layout:${Versions.constraintLayout}"
-        const val vectorDrawable = "com.android.support:support-vector-drawable:${Versions.supportLibrary}"
+        const val annotation = "androidx.annotation:annotation:${Versions.annotation}"
+        const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
+        const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+        const val vectorDrawable = "androidx.vectordrawable:vectordrawable:${Versions.vectorDrawable}"
 
         object Test {
 
-            const val espresso = "com.android.support.test.espresso:espresso-core:${Versions.espresso}"
-            const val rules = "com.android.support.test:rules:${Versions.rules}"
-
+            const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
+            const val rules = "androidx.test:rules:${Versions.rules}"
+            const val testExtJunit = "androidx.test.ext:junit:${Versions.testExtJunit}"
         }
 
     }
