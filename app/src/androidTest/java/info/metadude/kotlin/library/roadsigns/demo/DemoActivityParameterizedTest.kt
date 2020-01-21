@@ -1,14 +1,14 @@
 package info.metadude.kotlin.library.roadsigns.demo
 
 import android.content.Context
-import android.support.annotation.StringRes
-import android.support.test.InstrumentationRegistry
-import android.support.test.espresso.Espresso.onView
-import android.support.test.espresso.action.ViewActions.click
-import android.support.test.espresso.assertion.ViewAssertions.matches
-import android.support.test.espresso.matcher.ViewMatchers.*
-import android.support.test.rule.ActivityTestRule
 import android.view.View
+import androidx.annotation.StringRes
+import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions.click
+import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.*
+import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.rule.ActivityTestRule
 import org.hamcrest.Matcher
 import org.junit.Before
 import org.junit.Rule
@@ -72,7 +72,7 @@ class DemoActivityParameterizedTest(
 
     @Before
     fun setUp() {
-        context = InstrumentationRegistry.getTargetContext()
+        context = InstrumentationRegistry.getInstrumentation().targetContext
     }
 
     @Test

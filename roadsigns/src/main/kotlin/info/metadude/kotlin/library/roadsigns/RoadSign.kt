@@ -1,14 +1,14 @@
 package info.metadude.kotlin.library.roadsigns
 
 import android.content.Context
-import android.support.annotation.DrawableRes
-import android.support.annotation.StringRes
-import android.support.constraint.ConstraintLayout
-import android.support.graphics.drawable.VectorDrawableCompat
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat
 
 class RoadSign : ConstraintLayout {
 

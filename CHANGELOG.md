@@ -1,5 +1,16 @@
 # Road signs changelog
 
+## NEXT
+
+* Not published yet
+
+### Changes
+
+* This is the first version based on androidx.* libraries.
+* Use `androidx.annotation:annotation:1.1.0`.
+* Use `androidx.constraintlayout:constraintlayout:1.1.3`.
+* Use `androidx.vectordrawable:vectordrawable:1.1.0`.
+
 
 ## [v.2.0.0](https://github.com/Umweltzone/roadsigns/releases/tag/v.2.0.0)
 
