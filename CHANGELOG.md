@@ -1,8 +1,8 @@
 # Road signs changelog
 
-## NEXT
+## [v.3.0.0](https://github.com/Umweltzone/roadsigns/releases/tag/v.3.0.0)
 
-* Not published yet
+* Published: 2020-01-21
 
 ### Changes
 
