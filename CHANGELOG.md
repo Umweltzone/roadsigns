@@ -6,6 +6,7 @@
 
 ### Changes
 
+* This version is based on Kotlin 1.3.70.
 * Add road signs for Diesel prohibition zones in Darmstadt.
 
 
