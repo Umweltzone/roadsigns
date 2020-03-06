@@ -18,6 +18,8 @@ class RoadSign : ConstraintLayout {
 
         sealed class DieselProhibition : Type() {
             object CarsFreeUntilEuro5VOpenForResidentsBerlin : DieselProhibition()
+            object CarsFreeUntilEuro5PetrolUntilEuro2Darmstadt : DieselProhibition()
+            object HgvsCarsFreeUntilEuro5VPetrolUntilEuro2Darmstadt : DieselProhibition()
             object CarsFreeUntilEuro5VOpenForResidentsHamburg : DieselProhibition()
             object HgvsFreeUntilEuroVOpenForResidentsHamburg : DieselProhibition()
             object FreeAsOfEuro5VExceptDeliveryVehiclesStuttgart : DieselProhibition()
@@ -80,6 +82,8 @@ class RoadSign : ConstraintLayout {
         Type.DieselProhibition.CarsFreeUntilEuro5VOpenForResidentsHamburg -> R.string.diesel_prohibition_cars_free_until_euro_5_v_open_for_residents
         Type.DieselProhibition.HgvsFreeUntilEuroVOpenForResidentsHamburg -> R.string.diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg
         Type.DieselProhibition.FreeAsOfEuro5VExceptDeliveryVehiclesStuttgart -> R.string.diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart
+        Type.DieselProhibition.CarsFreeUntilEuro5PetrolUntilEuro2Darmstadt -> R.string.prohibition_cars_free_until_euro_5_petrol_until_euro_2_darmstadt
+        Type.DieselProhibition.HgvsCarsFreeUntilEuro5VPetrolUntilEuro2Darmstadt -> R.string.prohibition_hgvs_cars_free_until_euro_5_v_petrol_until_euro_2_darmstadt
         Type.EnvironmentalBadge.Green -> R.string.environmental_badges_content_description_green
         Type.EnvironmentalBadge.YellowGreen -> R.string.environmental_badges_content_description_yellow_green
         Type.EnvironmentalBadge.RedYellowGreen -> R.string.environmental_badges_content_description_red_yellow_green
@@ -92,6 +96,8 @@ class RoadSign : ConstraintLayout {
         Type.DieselProhibition.CarsFreeUntilEuro5VOpenForResidentsHamburg -> R.drawable.ic_diesel_prohibition_cars_free_until_euro_5_v_open_for_residents
         Type.DieselProhibition.HgvsFreeUntilEuroVOpenForResidentsHamburg -> R.drawable.ic_diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg
         Type.DieselProhibition.FreeAsOfEuro5VExceptDeliveryVehiclesStuttgart -> R.drawable.ic_diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart
+        Type.DieselProhibition.CarsFreeUntilEuro5PetrolUntilEuro2Darmstadt -> R.drawable.ic_prohibition_cars_diesel_free_until_euro_5_petrol_until_euro_2_darmstadt
+        Type.DieselProhibition.HgvsCarsFreeUntilEuro5VPetrolUntilEuro2Darmstadt -> R.drawable.ic_prohibition_hvgs_cars_diesel_free_until_euro_5_v_petrol_until_euro_2_darmstadt
         Type.EnvironmentalBadge.Green -> R.drawable.ic_environmental_badges_green
         Type.EnvironmentalBadge.YellowGreen -> R.drawable.ic_environmental_badges_yellow_green
         Type.EnvironmentalBadge.RedYellowGreen -> R.drawable.ic_environmental_badges_red_yellow_green

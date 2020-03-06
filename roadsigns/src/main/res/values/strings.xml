@@ -16,6 +16,12 @@
     <string name="diesel_prohibition_cars_free_until_euro_5_v_open_for_residents">
         Road sign: Prohibition for motor vehicles, Diesel until Euro 5/V, open for residents
     </string>
+    <string name="prohibition_hgvs_cars_free_until_euro_5_v_petrol_until_euro_2_darmstadt">
+        Road sign: Prohibition for heavy goods and motor vehicles, Diesel until Euro 5/V, Petrol until Euro 2
+    </string>
+    <string name="prohibition_cars_free_until_euro_5_petrol_until_euro_2_darmstadt">
+        Road sign: Prohibition for motor vehicles, Diesel until Euro 5, Petrol until Euro 2
+    </string>
     <string name="diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg">
         Road sign: Prohibition for heavy goods vehicles, Diesel until Euro V, open for residents
     </string>

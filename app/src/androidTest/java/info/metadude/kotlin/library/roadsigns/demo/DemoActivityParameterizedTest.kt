@@ -44,7 +44,9 @@ class DemoActivityParameterizedTest(
             testCaseOf(R.string.environmental_badges_content_description_red_yellow_green),
             testCaseOf(R.string.diesel_prohibition_cars_free_until_euro_5_v_open_for_residents),
             testCaseOf(R.string.diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg),
-            testCaseOf(R.string.diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart)
+            testCaseOf(R.string.diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart),
+            testCaseOf(R.string.prohibition_cars_free_until_euro_5_petrol_until_euro_2_darmstadt),
+            testCaseOf(R.string.prohibition_hgvs_cars_free_until_euro_5_v_petrol_until_euro_2_darmstadt)
         )
 
         private fun testCaseOf(descriptionResource: Int) = arrayOf(

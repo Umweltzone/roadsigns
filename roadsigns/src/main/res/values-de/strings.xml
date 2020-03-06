@@ -16,6 +16,12 @@
     <string name="diesel_prohibition_cars_free_until_euro_5_v_open_for_residents">
         Strassenschild: Verbot für Kraftwagen, Diesel bis Euro 5/V, Anlieger frei
     </string>
+    <string name="prohibition_hgvs_cars_free_until_euro_5_v_petrol_until_euro_2_darmstadt">
+        Strassenschild: Verbot für LKWs und Kraftwagen, Diesel bis Euro 5/V und Benziner bis Euro 2
+    </string>
+    <string name="prohibition_cars_free_until_euro_5_petrol_until_euro_2_darmstadt">
+        Strassenschild: Verbot für Kraftwagen, Diesel bis Euro 5 und Benziner bis Euro 2
+    </string>
     <string name="diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg">
         Strassenschild: Verbot für LKWs, Diesel bis Euro V, Anlieger frei
     </string>

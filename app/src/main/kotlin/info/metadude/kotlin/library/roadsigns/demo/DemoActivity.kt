@@ -58,6 +58,10 @@ class DemoActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                     return RoadSign.Type.DieselProhibition.HgvsFreeUntilEuroVOpenForResidentsHamburg
                 getString(R.string.diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart) ->
                     return RoadSign.Type.DieselProhibition.FreeAsOfEuro5VExceptDeliveryVehiclesStuttgart
+                getString(R.string.prohibition_cars_free_until_euro_5_petrol_until_euro_2_darmstadt) ->
+                    return RoadSign.Type.DieselProhibition.CarsFreeUntilEuro5PetrolUntilEuro2Darmstadt
+                getString(R.string.prohibition_hgvs_cars_free_until_euro_5_v_petrol_until_euro_2_darmstadt) ->
+                    return RoadSign.Type.DieselProhibition.HgvsCarsFreeUntilEuro5VPetrolUntilEuro2Darmstadt
             }
             throw IllegalStateException("Unknown item value: $this")
         }
