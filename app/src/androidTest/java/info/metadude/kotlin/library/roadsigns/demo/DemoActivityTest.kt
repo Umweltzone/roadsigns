@@ -41,7 +41,9 @@ class DemoActivityTest {
 
     @Test
     fun genericRoadSignViewIsDisplayed() {
-        val selectionItemText = context.getString(R.string.environmental_badges_content_description_green)
+        val selectionItemText = context.getString(
+            R.string.environmental_badges_content_description_green
+        )
         onView(withId(R.id.selectionView)).perform(click())
         onView(withText(selectionItemText)).perform(click())
         onView(withId(R.id.genericRoadSignView)).check(matches(isDisplayed()))

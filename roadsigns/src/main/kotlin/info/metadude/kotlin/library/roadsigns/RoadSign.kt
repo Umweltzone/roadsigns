@@ -51,7 +51,11 @@ class RoadSign : ConstraintLayout {
         type = defaultType
     }
 
-    constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
+    constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(
+        context,
+        attrs,
+        defStyleAttr
+    ) {
         inflateLayout(context)
         type = defaultType
     }
@@ -61,7 +65,8 @@ class RoadSign : ConstraintLayout {
     }
 
     private fun updateRoadSignView(@DrawableRes drawableResource: Int, @StringRes contentDescription: Int) {
-        val drawable = VectorDrawableCompat.create(context.resources, drawableResource, context.theme)
+        val drawable =
+            VectorDrawableCompat.create(context.resources, drawableResource, context.theme)
         roadSignView.setImageDrawable(drawable)
         roadSignView.contentDescription = context.getString(contentDescription)
         invalidate()

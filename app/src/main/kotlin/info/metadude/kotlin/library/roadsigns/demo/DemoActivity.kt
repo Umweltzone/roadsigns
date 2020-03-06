@@ -28,7 +28,12 @@ class DemoActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         selectionView.onItemSelectedListener = this
     }
 
-    override fun onItemSelected(spinnerView: AdapterView<*>, itemView: View?, viewPosition: Int, rowId: Long) {
+    override fun onItemSelected(
+        spinnerView: AdapterView<*>,
+        itemView: View?,
+        viewPosition: Int,
+        rowId: Long
+    ) {
         val item: String = spinnerView.getItemAtPosition(viewPosition) as String
         roadSignView.type = item.roadSignType
     }

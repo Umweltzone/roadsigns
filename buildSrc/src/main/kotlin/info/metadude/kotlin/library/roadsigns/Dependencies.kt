@@ -20,7 +20,8 @@ object Plugins {
     }
 
     const val android = "com.android.tools.build:gradle:${Versions.android}"
-    const val androidMavenPublish = "digital.wup:android-maven-publish:${Versions.androidMavenPublish}"
+    const val androidMavenPublish =
+        "digital.wup:android-maven-publish:${Versions.androidMavenPublish}"
     const val bintray = "com.jfrog.bintray.gradle:gradle-bintray-plugin:${Versions.bintray}"
     const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
     const val versions = "com.github.ben-manes:gradle-versions-plugin:${Versions.versions}"
@@ -44,8 +45,10 @@ object Libs {
 
         const val annotation = "androidx.annotation:annotation:${Versions.annotation}"
         const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
-        const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
-        const val vectorDrawable = "androidx.vectordrawable:vectordrawable:${Versions.vectorDrawable}"
+        const val constraintLayout =
+            "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+        const val vectorDrawable =
+            "androidx.vectordrawable:vectordrawable:${Versions.vectorDrawable}"
 
         object Test {
 

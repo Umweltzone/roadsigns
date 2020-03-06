@@ -33,40 +33,21 @@ class DemoActivityParameterizedTest(
     private lateinit var context: Context
 
     companion object {
-
         @JvmStatic
         @Parameterized.Parameters
         fun testParameters() = listOf(
-            arrayOf(
-                R.string.environmental_badges_content_description_green,
-                isDisplayed(),
-                R.string.environmental_badges_content_description_green
-            ),
-            arrayOf(
-                R.string.environmental_badges_content_description_yellow_green,
-                isDisplayed(),
-                R.string.environmental_badges_content_description_yellow_green
-            ),
-            arrayOf(
-                R.string.environmental_badges_content_description_red_yellow_green,
-                isDisplayed(),
-                R.string.environmental_badges_content_description_red_yellow_green
-            ),
-            arrayOf(
-                R.string.diesel_prohibition_cars_free_until_euro_5_v_open_for_residents,
-                isDisplayed(),
-                R.string.diesel_prohibition_cars_free_until_euro_5_v_open_for_residents
-            ),
-            arrayOf(
-                R.string.diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg,
-                isDisplayed(),
-                R.string.diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg
-            ),
-            arrayOf(
-                R.string.diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart,
-                isDisplayed(),
-                R.string.diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart
-            )
+            testCaseOf(R.string.environmental_badges_content_description_green),
+            testCaseOf(R.string.environmental_badges_content_description_yellow_green),
+            testCaseOf(R.string.environmental_badges_content_description_red_yellow_green),
+            testCaseOf(R.string.diesel_prohibition_cars_free_until_euro_5_v_open_for_residents),
+            testCaseOf(R.string.diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg),
+            testCaseOf(R.string.diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart)
+        )
+
+        private fun testCaseOf(descriptionResource: Int) = arrayOf(
+            descriptionResource, // as selectionItemTextRes
+            isDisplayed(),
+            descriptionResource // as contentDescriptionTextRes
         )
     }
 
