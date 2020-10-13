@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">RoadSigns demo</string>
+    <string name="sign_none">Podepsat Žádný</string>
+    <string name="environmental_badges_content_description_green">Popis obsahu ekologických odznaků zelený</string>
+    <string name="environmental_badges_content_description_yellow_green">Popis obsahu ekologických odznaků žlutozelený</string>
+    <string name="environmental_badges_content_description_red_yellow_green">Environmentální odznaky obsah popis červená žlutá zelená</string>
+    <string name="app_name">Automobily se zákazem nafty jsou zdarma pro obyvatele, dokud nebude otevřeno 5 EUR</string>
+    <string name="app_name">Zákaz dieselovým motorovým vozidlům zdarma, dokud nebude euro v otevřené pro obyvatele Hamburku</string>
+    <string name="app_name">Zákaz nafty zdarma od 5 EUR kromě dodávkových vozidel Stuttgart</string>
+    <string name="app_name">Zákaz auta zdarma do 5 euro benzín do 2 euro darmstadt</string>
+    <string name="app_name">Zákaz osobních automobilů zdarma do 5 EUR benzinu do 2 EUR Darmstadt</string>
+
+    <string-array name="road_signs_array">
+        <item>@string/sign_none</item>
+        <item>@string/environmental_badges_content_description_green</item>
+        <item>@string/environmental_badges_content_description_yellow_green</item>
+        <item>@string/environmental_badges_content_description_red_yellow_green</item>
+        <item>@string/diesel_prohibition_cars_free_until_euro_5_v_open_for_residents</item>
+        <item>@string/diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg</item>
+        <item>@string/diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart</item>
+        <item>@string/prohibition_cars_free_until_euro_5_petrol_until_euro_2_darmstadt</item>
+        <item>@string/prohibition_hgvs_cars_free_until_euro_5_v_petrol_until_euro_2_darmstadt</item>
+    </string-array>
+
+</resources>
