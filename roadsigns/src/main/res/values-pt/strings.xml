@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sign_none">
+        Placa de trânsito: Nenhuma
+    </string>
+    <string name="environmental_badges_content_description_green">
+        Placa de trânsito: Liberado para veículos com vinheta ambiental verde
+    </string>
+    <string name="environmental_badges_content_description_yellow_green">
+        Placa de trânsito: Liberado para veículos com vinheta ambiental verde e amarela
+    </string>
+    <string name="environmental_badges_content_description_red_yellow_green">
+        Placa de trânsito: Liberado para veículos com vinheta ambiental verde, amarela e vermelha
+    </string>
+    <string name="diesel_prohibition_cars_free_until_euro_5_v_open_for_residents">
+        Placa de trânsito: Proibido para automóveis, Diesel até Euro 5/V, liberado para moradores
+    </string>
+    <string name="prohibition_hgvs_cars_free_until_euro_5_v_petrol_until_euro_2_darmstadt">
+        Placa de trânsito: Proibido para camiões e automóveis, Diesel até Euro 5/V, Gasolina até Euro 2
+    </string>
+    <string name="prohibition_cars_free_until_euro_5_petrol_until_euro_2_darmstadt">
+        Placa de trânsito: Proibido para automóveis, Diesel até Euro 5, Gasolina até Euro 2
+    </string>
+    <string name="diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg">
+        Placa de trânsito: Proibido para camiões, Diesel até Euro V, liberado para moradores
+    </string>
+    <string name="diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart">
+        Placa de trânsito: Liberado para Diesel a partir de Euro 5/V (exceto veículos de entrega)
+    </string>
+
+
+</resources>
