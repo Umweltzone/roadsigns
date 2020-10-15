@@ -46,6 +46,12 @@ build the sources directly from [this repository][github-roadsigns].
 
 * [Tobias Preuss][tobias-preuss]
 
+
+## Contributors
+
+* [Thiago de Oliveira Pires](https://github.com/tdopires)
+
+
 ## License
 
     Copyright 2019-2020 Tobias Preuss
