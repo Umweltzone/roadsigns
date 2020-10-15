@@ -1,5 +1,14 @@
 # Road signs changelog
 
+## NEXT
+
+* Not released yet.
+
+### Changes
+
+* Add Portuguese translation. Thanks @tdopires.
+
+
 ## [v.3.1.0](https://github.com/Umweltzone/roadsigns/releases/tag/v.3.1.0)
 
 * Published: 2020-03-06
