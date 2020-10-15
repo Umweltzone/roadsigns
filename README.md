@@ -9,6 +9,12 @@ The demo application allows selecting the different road signs.
 ![Demo application](gfx/screenshot-demo-app.png)
 
 
+## Supported languages
+- English 🇺🇸
+- German 🇩🇪
+- Portuguese 🇵🇹
+
+
 ### Gradle build
 
 To deploy the library to your local Maven repository run the following task:
