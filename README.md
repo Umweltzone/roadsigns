@@ -15,7 +15,7 @@ The demo application allows selecting the different road signs.
 - Portuguese 🇵🇹
 
 
-### Gradle build
+## Gradle build
 
 To deploy the library to your local Maven repository run the following task:
 
