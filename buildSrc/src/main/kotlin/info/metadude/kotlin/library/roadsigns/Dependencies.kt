@@ -11,7 +11,7 @@ object Android {
 object Plugins {
 
     private object Versions {
-        const val android = "3.5.3"
+        const val android = "4.1.0"
         const val androidMavenPublish = "3.6.3"
         const val bintray = "1.8.5"
         const val kotlin = "1.4.10"
