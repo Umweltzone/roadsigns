@@ -32,6 +32,5 @@ dependencies {
     implementation Libs.Support.constraintLayout
 
     androidTestImplementation Libs.Support.Test.espresso
-    androidTestImplementation Libs.Support.Test.rules
     androidTestImplementation Libs.Support.Test.testExtJunit
 }
