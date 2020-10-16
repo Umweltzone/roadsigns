@@ -55,6 +55,7 @@ build the sources directly from [this repository][github-roadsigns].
 
 ## Contributors
 
+* [Fredrik Henricsson](https://github.com/fejd)
 * [Thiago de Oliveira Pires](https://github.com/tdopires)
 
 
