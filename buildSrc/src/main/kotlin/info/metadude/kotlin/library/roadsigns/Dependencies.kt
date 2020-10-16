@@ -33,7 +33,6 @@ object Libs {
         const val appCompat = "1.2.0"
         const val constraintLayout = "2.0.2"
         const val espresso = "3.3.0"
-        const val rules = "1.3.0"
         const val testExtJunit = "1.1.2"
         const val vectorDrawable = "1.1.0"
     }
@@ -50,7 +49,6 @@ object Libs {
         object Test {
 
             const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
-            const val rules = "androidx.test:rules:${Versions.rules}"
             const val testExtJunit = "androidx.test.ext:junit:${Versions.testExtJunit}"
         }
 

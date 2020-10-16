@@ -5,22 +5,20 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
-import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.platform.app.InstrumentationRegistry
-import androidx.test.rule.ActivityTestRule
 import org.hamcrest.Matchers.not
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.junit.runner.RunWith
 
-@RunWith(AndroidJUnit4::class)
 class DemoActivityTest {
 
     @Suppress("RedundantVisibilityModifier")
     @Rule
     @JvmField
-    public val activityRule: ActivityTestRule<*> = ActivityTestRule(DemoActivity::class.java)
+    public val activityRule: ActivityScenarioRule<*> =
+        ActivityScenarioRule(DemoActivity::class.java)
 
     private lateinit var context: Context
 
