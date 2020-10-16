@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use constraintlayout v.2.0.2.
 * Add Portuguese translation. Thanks @tdopires.
 
 
