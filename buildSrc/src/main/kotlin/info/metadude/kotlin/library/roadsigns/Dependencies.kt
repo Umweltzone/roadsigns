@@ -15,7 +15,7 @@ object Plugins {
     private object Versions {
         const val android = "3.5.3"
         const val androidMavenPublish = "3.6.3"
-        const val bintray = "1.8.4"
+        const val bintray = "1.8.5"
         const val versions = "0.33.0"
     }
 
