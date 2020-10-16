@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sign_none">
+        Vägskylt: Ingen
+    </string>
+    <string name="environmental_badges_content_description_green">
+        Vägskylt: Tillåtet för fordon med grönt miljömärke
+    </string>
+    <string name="environmental_badges_content_description_yellow_green">
+        Vägskylt: Tillåtet för fordon med gult eller grönt miljömärke
+    </string>
+    <string name="environmental_badges_content_description_red_yellow_green">
+        Vägskylt: Tillåtet för fordon med rött, gult eller grönt miljömärke
+    </string>
+    <string name="diesel_prohibition_cars_free_until_euro_5_v_open_for_residents">
+        Vägskylt: Förbud mot motordrivna fordon, diesel till Euro 5/V, tillåtet för boende
+    </string>
+    <string name="prohibition_hgvs_cars_free_until_euro_5_v_petrol_until_euro_2_darmstadt">
+        Vägskylt: Förbud mot tunga fordon och motordrivna fordon, diesel till Euro 5/v, bensin till Euro 2
+    </string>
+    <string name="prohibition_cars_free_until_euro_5_petrol_until_euro_2_darmstadt">
+        Vägskylt: Förbud mot motordrivna fordon, diesel till Euro 5, bensin till Euro 2
+    </string>
+    <string name="diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg">
+        Vägskylt: Förbud mot tunga fordon, diesel till Euro V, tillåtet för boende
+    </string>
+    <string name="diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart">
+        Vägskylt: Diesel (förutom leveransbil) från Euro 5/V är tillåtet
+    </string>
+
+
+</resources>
