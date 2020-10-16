@@ -13,6 +13,7 @@ The demo application allows selecting the different road signs.
 - English 🇺🇸
 - German 🇩🇪
 - Portuguese 🇵🇹
+- Swedish 🇸🇪
 
 
 ## Gradle build
