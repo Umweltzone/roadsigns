@@ -8,14 +8,13 @@ import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import info.metadude.kotlin.library.roadsigns.RoadSign
 
-class DemoActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
+class DemoActivity : AppCompatActivity(R.layout.activity_demo), AdapterView.OnItemSelectedListener {
 
     private val selectionView by lazy { findViewById<Spinner>(R.id.selectionView) }
     private val roadSignView by lazy { findViewById<RoadSign>(R.id.roadSignView) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_demo)
         roadSignView.type = RoadSign.Type.EnvironmentalBadge.Green
         ArrayAdapter.createFromResource(
             this,

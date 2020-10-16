@@ -26,7 +26,6 @@ android {
 }
 
 dependencies {
-    implementation Libs.kotlinStdlib
     implementation Libs.Support.annotation
     implementation Libs.Support.constraintLayout
     implementation Libs.Support.vectorDrawable

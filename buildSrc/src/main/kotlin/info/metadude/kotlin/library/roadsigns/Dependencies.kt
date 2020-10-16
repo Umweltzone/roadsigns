@@ -3,27 +3,26 @@
 package info.metadude.kotlin.library.roadsigns
 
 object Android {
-    const val compileSdkVersion = 28
+    const val compileSdkVersion = 29
     const val minSdkVersion = 14
-    const val targetSdkVersion = 28
+    const val targetSdkVersion = 29
 }
-
-private const val kotlinVersion = "1.3.70"
 
 object Plugins {
 
     private object Versions {
-        const val android = "3.5.3"
+        const val android = "4.1.0"
         const val androidMavenPublish = "3.6.3"
-        const val bintray = "1.8.4"
-        const val versions = "0.28.0"
+        const val bintray = "1.8.5"
+        const val kotlin = "1.4.10"
+        const val versions = "0.33.0"
     }
 
     const val android = "com.android.tools.build:gradle:${Versions.android}"
     const val androidMavenPublish =
         "digital.wup:android-maven-publish:${Versions.androidMavenPublish}"
     const val bintray = "com.jfrog.bintray.gradle:gradle-bintray-plugin:${Versions.bintray}"
-    const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val versions = "com.github.ben-manes:gradle-versions-plugin:${Versions.versions}"
 }
 
@@ -31,15 +30,13 @@ object Libs {
 
     private object Versions {
         const val annotation = "1.1.0"
-        const val appCompat = "1.1.0"
-        const val constraintLayout = "1.1.3"
-        const val espresso = "3.2.0"
-        const val rules = "1.2.0"
-        const val testExtJunit = "1.1.1"
+        const val appCompat = "1.2.0"
+        const val constraintLayout = "2.0.2"
+        const val espresso = "3.3.0"
+        const val rules = "1.3.0"
+        const val testExtJunit = "1.1.2"
         const val vectorDrawable = "1.1.0"
     }
-
-    const val kotlinStdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
 
     object Support {
 

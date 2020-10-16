@@ -43,17 +43,17 @@ class RoadSign : ConstraintLayout {
             field = value
         }
 
-    constructor(context: Context?) : super(context, null) {
+    constructor(context: Context) : super(context, null) {
         inflateLayout(context)
         type = defaultType
     }
 
-    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs, 0) {
+    constructor(context: Context, attrs: AttributeSet?) : super(context, attrs, 0) {
         inflateLayout(context)
         type = defaultType
     }
 
-    constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(
+    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(
         context,
         attrs,
         defStyleAttr

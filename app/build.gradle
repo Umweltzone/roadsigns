@@ -28,7 +28,6 @@ android {
 
 dependencies {
     implementation project(":roadsigns")
-    implementation Libs.kotlinStdlib
     implementation Libs.Support.appCompat
     implementation Libs.Support.constraintLayout
 
