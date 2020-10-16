@@ -8,14 +8,13 @@ object Android {
     const val targetSdkVersion = 28
 }
 
-private const val kotlinVersion = "1.3.70"
-
 object Plugins {
 
     private object Versions {
         const val android = "3.5.3"
         const val androidMavenPublish = "3.6.3"
         const val bintray = "1.8.5"
+        const val kotlin = "1.4.10"
         const val versions = "0.33.0"
     }
 
@@ -23,7 +22,7 @@ object Plugins {
     const val androidMavenPublish =
         "digital.wup:android-maven-publish:${Versions.androidMavenPublish}"
     const val bintray = "com.jfrog.bintray.gradle:gradle-bintray-plugin:${Versions.bintray}"
-    const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val versions = "com.github.ben-manes:gradle-versions-plugin:${Versions.versions}"
 }
 
@@ -38,8 +37,6 @@ object Libs {
         const val testExtJunit = "1.1.2"
         const val vectorDrawable = "1.1.0"
     }
-
-    const val kotlinStdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
 
     object Support {
 
