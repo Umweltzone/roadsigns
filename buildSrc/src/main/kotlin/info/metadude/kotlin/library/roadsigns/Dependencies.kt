@@ -33,9 +33,9 @@ object Libs {
         const val annotation = "1.1.0"
         const val appCompat = "1.1.0"
         const val constraintLayout = "1.1.3"
-        const val espresso = "3.2.0"
-        const val rules = "1.2.0"
-        const val testExtJunit = "1.1.1"
+        const val espresso = "3.3.0"
+        const val rules = "1.3.0"
+        const val testExtJunit = "1.1.2"
         const val vectorDrawable = "1.1.0"
     }
 
