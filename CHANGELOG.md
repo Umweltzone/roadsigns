@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use targetSdkVersion 29, compileSdkVersion 29.
 * Use Android plugin for Gradle v.4.1.0.
 * Use Kotlin v.1.4.10.
 * Use constraintlayout v.2.0.2.
