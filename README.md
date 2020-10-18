@@ -58,6 +58,7 @@ build the sources directly from [this repository][github-roadsigns].
 ## Contributors
 
 * [Fredrik Henricsson](https://github.com/fejd)
+* [Natalie Stroud](https://github.com/natastro)
 * [Thiago de Oliveira Pires](https://github.com/tdopires)
 
 
