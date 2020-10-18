@@ -61,6 +61,7 @@ build the sources directly from [this repository][github-roadsigns].
 * [Fredrik Henricsson](https://github.com/fejd)
 * [Natalie Stroud](https://github.com/natastro)
 * [Thiago de Oliveira Pires](https://github.com/tdopires)
+* [Tomasz Skowroński](https://github.com/hexmind)
 
 
 ## License
