@@ -12,6 +12,7 @@ The demo application allows selecting the different road signs.
 ## Supported languages
 - English 🇺🇸
 - German 🇩🇪
+- Polish 🇵🇱
 - Portuguese 🇵🇹
 - Spanish 🇪🇸
 - Swedish 🇸🇪

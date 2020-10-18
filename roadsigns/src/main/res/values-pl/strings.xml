@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sign_none">
+        Znak drogowy: Brak
+    </string>
+    <string name="environmental_badges_content_description_green">
+        Znak drogowy: Bezpłatne dla pojazdów z zielonymi plakietkami ekologicznymi
+    </string>
+    <string name="environmental_badges_content_description_yellow_green">
+        Znak drogowy: Bezpłatne dla pojazdów z żółtymi i zielonymi plakietkami ekologicznymi
+    </string>
+    <string name="environmental_badges_content_description_red_yellow_green">
+        Znak drogowy: Bezpłatne dla pojazdów z czerwonymi, żółtymi i zielonymi plakietkami ekologicznymi
+    </string>
+    <string name="diesel_prohibition_cars_free_until_euro_5_v_open_for_residents">
+        Znak drogowy: Zakaz dla pojazdów silnikowych, diesli do Euro 5/V, nie dotyczy mieszkańców
+    </string>
+    <string name="prohibition_hgvs_cars_free_until_euro_5_v_petrol_until_euro_2_darmstadt">
+        Znak drogowy: Zakaz dla pojazdów ciężarowych i silnikowych, diesli do Euro 5/V, benzynowych do Euro 2
+    </string>
+    <string name="prohibition_cars_free_until_euro_5_petrol_until_euro_2_darmstadt">
+        Znak drogowy: Zakaz dla pojazdów silnikowych, diesli do Euro 5, benzynowych do Euro 2
+    </string>
+    <string name="diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg">
+        Znak drogowy: Zakaz dla pojazdów ciężarowych, diesli do Euro V, nie dotyczy mieszkańców
+    </string>
+    <string name="diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart">
+        Znak drogowy: Diesel (z wyłączeniem samochodów dostawczych) od Euro 5/V bezpłatnie
+    </string>
+
+
+</resources>

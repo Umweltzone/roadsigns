@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Add Polish translation. Thanks @hexmind.
 * Add Spanish translation. Thanks @natastro.
 * Add Swedish translation. Thanks @fejd.
 * Use targetSdkVersion 29, compileSdkVersion 29.
