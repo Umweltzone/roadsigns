@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sign_none">
+        Panneau : Aucun
+    </string>
+    <string name="environmental_badges_content_description_green">
+        Panneau : Gratuit pour les véhicules munis de l\'Eco-pastille verte
+    </string>
+    <string name="environmental_badges_content_description_yellow_green">
+        Panneau : Gratuit pour les véhicules munis de l\'Eco-pastille jaune ou verte
+    </string>
+    <string name="environmental_badges_content_description_red_yellow_green">
+        Panneau : Gratuit pour les véhicules munis de l\'Eco-pastille rouge, jaune ou verte
+    </string>
+    <string name="diesel_prohibition_cars_free_until_euro_5_v_open_for_residents">
+        Panneau : Interdiction d\'accès aux voitures à moteur Diesel de norme Euro 5/V ou plus ancienne. Ouvert aux résidents
+    </string>
+    <string name="prohibition_hgvs_cars_free_until_euro_5_v_petrol_until_euro_2_darmstadt">
+        Panneau : Interdiction d\'accès aux camions et voitures à moteur Diesel de norme Euro 5/V ou plus ancienne et aux camions et voitures essence de norme Euro 2 ou plus ancienne
+    </string>
+    <string name="prohibition_cars_free_until_euro_5_petrol_until_euro_2_darmstadt">
+        Panneau : Interdiction d\'accès aux voitures à moteur Diesel de norme Euro 5 ou plus ancienne et essence de norme Euro 2 ou plus ancienne
+    </string>
+    <string name="diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg">
+        Panneau : Interdiction d\'accès aux camions à moteur Diesel de norme Euro 5 ou plus ancienne. Ouvert aux résidents
+    </string>
+    <string name="diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart">
+        Panneau : Accès restreint (sauf livraisons) aux véhicules à moteur Diesel de norme Euro 5/V ou plus récente.
+    </string>
+
+</resources>
+
