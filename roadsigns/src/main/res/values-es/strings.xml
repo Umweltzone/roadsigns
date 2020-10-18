@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sign_none">
+        La rótulo de tráfico: Ninguno
+    </string>
+    <string name="environmental_badges_content_description_green">
+        La rótulo de tráfico: Gratis para los vehículos con insignias ambientales verdes
+    </string>
+    <string name="environmental_badges_content_description_yellow_green">
+        La rótulo de tráfico: Gratis para los vehículos con insignias ambientales amarillas y verdes
+    </string>
+    <string name="environmental_badges_content_description_red_yellow_green">
+        La rótulo de tráfico: Gratis para los vehículos con insignias ambientales rojas, amarillas y verdes
+    </string>
+    <string name="diesel_prohibition_cars_free_until_euro_5_v_open_for_residents">
+        La rótulo de tráfico: Prohibición de los vehículos de motor, Diesel hasta Euro 5/V, abierto para los residentes
+    </string>
+    <string name="prohibition_hgvs_cars_free_until_euro_5_v_petrol_until_euro_2_darmstadt">
+        La rótulo de tráfico: Prohibición de los bienes pesados y los vehículos de motor, Diesel hasta Euro 5/V, Petrol hasta Euro 2
+    </string>
+    <string name="prohibition_cars_free_until_euro_5_petrol_until_euro_2_darmstadt">
+        La rótulo de tráfico: Prohibición de los vehículos de motor, Diesel hasta Euro 5, Petrol hasta Euro 2
+    </string>
+    <string name="diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg">
+        La rótulo de tráfico: Prohibición para vehículos pesados, Diesel hasta Euro V, abierto para los residentes
+    </string>
+    <string name="diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart">
+        La rótulo de tráfico: Diesel (excepto los vehículos de reparto) a partir de Euro 5/V gratis
+    </string>
+
+
+</resources>
