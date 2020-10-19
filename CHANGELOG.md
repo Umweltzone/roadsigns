@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Add French translation. Thanks @Tititesouris.
 * Add Polish translation. Thanks @hexmind.
 * Add Spanish translation. Thanks @natastro.
 * Add Swedish translation. Thanks @fejd.
