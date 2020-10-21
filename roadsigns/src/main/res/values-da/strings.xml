@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sign_none">
+        Vejskilt: Intet
+    </string>
+    <string name="environmental_badges_content_description_green">
+        Vejskilt: Tilladt for køretøjer med grønt miljømærke
+    </string>
+    <string name="environmental_badges_content_description_yellow_green">
+        Vejskilt: Tilladt for køretøjer med gult eller grønt miljømærke
+    </string>
+    <string name="environmental_badges_content_description_red_yellow_green">
+        Vejskilt: Tilladt for køretøjer med rødt, gult eller grønt miljømærke
+    </string>
+    <string name="diesel_prohibition_cars_free_until_euro_5_v_open_for_residents">
+        Vejskilt: Forbudt for motorkøretøjer, diesel indtil Euro 5/V, tilladt for beboere
+    </string>
+    <string name="prohibition_hgvs_cars_free_until_euro_5_v_petrol_until_euro_2_darmstadt">
+        Vejskilt: Forbudt for tunge køretøjer og motorkøretøjer, diesel indtil Euro 5/V, benzin indtil Euro 2
+    </string>
+    <string name="prohibition_cars_free_until_euro_5_petrol_until_euro_2_darmstadt">
+        Vejskilt: Forbudt for motorkøretøjer, diesel indtil Euro 5/V, benzin indtil Euro 2
+    </string>
+    <string name="diesel_prohibition_hgvs_free_until_euro_v_open_for_residents_hamburg">
+        Vejskilt: Forbudt for tunge køretøjer, diesel indtil Euro 5/V, tilladt for beboere
+    </string>
+    <string name="diesel_prohibition_free_as_of_euro_5_v_except_delivery_vehicles_stuttgart">
+        Vejskilt: Diesel (bortset fra varevogne) fra Euro 5/V er tilladt
+    </string>
+
+</resources>
+
