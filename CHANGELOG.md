@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use constraintlayout v.2.0.4.
 * Fix Gradle 6 deployment resulting in build errors when using the aar.
 * Add Danish translation. Thanks @larsnaesbye.
 * Add French translation. Thanks @Tititesouris.
@@ -15,7 +16,6 @@
 * Use targetSdkVersion 29, compileSdkVersion 29.
 * Use Android plugin for Gradle v.4.1.0.
 * Use Kotlin v.1.4.10.
-* Use constraintlayout v.2.0.2.
 * Add Portuguese translation. Thanks @tdopires.
 
 
