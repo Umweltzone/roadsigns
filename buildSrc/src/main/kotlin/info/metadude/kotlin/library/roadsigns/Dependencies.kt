@@ -13,7 +13,7 @@ object Plugins {
     private object Versions {
         const val android = "4.1.0"
         const val kotlin = "1.4.10"
-        const val versions = "0.33.0"
+        const val versions = "0.36.0"
     }
 
     const val android = "com.android.tools.build:gradle:${Versions.android}"
