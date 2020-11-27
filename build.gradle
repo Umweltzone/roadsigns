@@ -12,8 +12,6 @@ buildscript {
 
     dependencies {
         classpath Plugins.android
-        classpath Plugins.androidMavenPublish
-        classpath Plugins.bintray
         classpath Plugins.kotlin
         classpath Plugins.versions
     }

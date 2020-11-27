@@ -1,32 +1,81 @@
-apply plugin: "digital.wup.android-maven-publish"
+// javadocJar and sourcesJar tasks pick up group and version
+group = project.groupId
+version = project.versionName
 
-publishing {
-    publications {
-        local(MavenPublication) {
-            from components.android
-            groupId project.groupId
-            artifactId project.artifactId
-            version = project.versionName
+Properties properties = new Properties()
+def propertiesFile = project.rootProject.file("${System.properties['user.home']}/.gradle/gradle.properties")
+if (propertiesFile.exists()) {
+    properties.load(propertiesFile.newDataInputStream())
+}
+def bintrayUser = properties.getProperty("bintrayUser") ?: System.getenv("BINTRAY_USER")
+def bintrayApiKey = properties.getProperty("bintrayApiKey") ?: System.getenv("BINTRAY_API_KEY")
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = project.groupId
+                artifactId = project.artifactId
+                version = project.versionName
+
+                artifact sourcesJar {
+                    classifier "sources"
+                }
+
+                artifact javadocJar {
+                    classifier "javadoc"
+                }
+
+                pom {
+                    name = project.packageName
+                    description = project.packageDescription
+                    url = project.packageWebsiteUrl
+                    licenses {
+                        license {
+                            name = project.packageLicenseApacheName
+                            url = project.packageLicenseApacheUrl
+                        }
+                    }
+                    scm {
+                        connection = project.packageScmConnection
+                        developerConnection = project.packageScmDeveloperConnection
+                        url = project.packageWebsiteUrl
+                    }
+                }
+
+                repositories {
+                    maven {
+                        name project.bintrayPublicationName
+                        url = uri(project.bintrayUrl)
+                        credentials {
+                            username = bintrayUser
+                            password = bintrayApiKey
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
-apply plugin: "com.jfrog.bintray"
-
-group = project.groupId
-version = project.versionName
-
 task sourcesJar(type: Jar) {
+    group "publishing"
+    description "Generates source jar"
     archiveClassifier.set("sources")
     from android.sourceSets.main.java.srcDirs
 }
 
 task javadoc(type: Javadoc) {
+    group "publishing"
+    description "Generates javadoc"
     def paths = android.getBootClasspath()
     classpath += project.files(paths.join(File.pathSeparator))
 }
 
 task javadocJar(type: Jar, dependsOn: javadoc) {
+    group "publishing"
+    description "Generates javadocJar"
     archiveClassifier.set("javadoc")
     from javadoc.destinationDir
 }
@@ -37,69 +86,7 @@ javadoc {
     }
 }
 
-publishing {
-    publications {
-        bintray(MavenPublication) {
-            artifact "$buildDir/outputs/aar/${project.artifactId}-release.aar"
-            pom.withXml {
-                def dependenciesNode = asNode().appendNode("dependencies")
-
-                // Iterate over the implementation dependencies (we don"t want the test ones), adding a <dependency> node for each
-                configurations.implementation.allDependencies.each {
-                    // Ensure dependencies such as fileTree are not included in the pom.
-                    if (it.name != "unspecified") {
-                        def dependencyNode = dependenciesNode.appendNode("dependency")
-                        dependencyNode.appendNode("groupId", it.group)
-                        dependencyNode.appendNode("artifactId", it.name)
-                        dependencyNode.appendNode("version", it.version)
-                    }
-                }
-            }
-        }
-    }
-}
-
 artifacts {
     archives javadocJar
     archives sourcesJar
 }
-
-Properties properties = new Properties()
-def propertiesFile = project.rootProject.file("${System.properties['user.home']}/.gradle/gradle.properties")
-if (propertiesFile.exists()) {
-    properties.load(propertiesFile.newDataInputStream())
-}
-def bintrayUser = properties.getProperty("bintrayUser") ?: System.getenv("BINTRAY_USER")
-def bintrayApiKey = properties.getProperty("bintrayApiKey") ?: System.getenv("BINTRAY_API_KEY")
-
-bintray {
-    user = bintrayUser
-    key = bintrayApiKey
-    configurations = ["archives"]
-    publications = ["bintray"]
-    override = true
-    publish = true
-    dryRun = false
-
-    pkg {
-        repo = project.packageRepository
-        name = project.packageName
-        desc = project.packageDescription
-        websiteUrl = project.packageWebsiteUrl
-        issueTrackerUrl = project.packageIssueTrackingUrl
-        vcsUrl = project.packageVcsUrl
-        licenses = project.packageLicenses
-        labels = project.packageLabels
-
-        publicDownloadNumbers = true
-        version {
-            name = project.versionName
-            desc = project.versionDescription
-            released = new Date()
-            vcsTag = project.versionVcsTag
-        }
-    }
-}
-
-// Ensure the *.pom is generated before the artifacts are uploaded.
-bintrayUpload.dependsOn(generatePomFileForBintrayPublication)

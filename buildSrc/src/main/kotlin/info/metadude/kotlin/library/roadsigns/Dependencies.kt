@@ -12,16 +12,11 @@ object Plugins {
 
     private object Versions {
         const val android = "4.1.0"
-        const val androidMavenPublish = "3.6.3"
-        const val bintray = "1.8.5"
         const val kotlin = "1.4.10"
         const val versions = "0.33.0"
     }
 
     const val android = "com.android.tools.build:gradle:${Versions.android}"
-    const val androidMavenPublish =
-        "digital.wup:android-maven-publish:${Versions.androidMavenPublish}"
-    const val bintray = "com.jfrog.bintray.gradle:gradle-bintray-plugin:${Versions.bintray}"
     const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val versions = "com.github.ben-manes:gradle-versions-plugin:${Versions.versions}"
 }
