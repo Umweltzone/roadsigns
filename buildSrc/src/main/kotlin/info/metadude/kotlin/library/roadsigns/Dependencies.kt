@@ -11,9 +11,9 @@ object Android {
 object Plugins {
 
     private object Versions {
-        const val android = "4.1.0"
-        const val kotlin = "1.4.10"
-        const val versions = "0.33.0"
+        const val android = "4.1.1"
+        const val kotlin = "1.4.20"
+        const val versions = "0.36.0"
     }
 
     const val android = "com.android.tools.build:gradle:${Versions.android}"
@@ -26,7 +26,7 @@ object Libs {
     private object Versions {
         const val annotation = "1.1.0"
         const val appCompat = "1.2.0"
-        const val constraintLayout = "2.0.2"
+        const val constraintLayout = "2.0.4"
         const val espresso = "3.3.0"
         const val testExtJunit = "1.1.2"
         const val vectorDrawable = "1.1.0"
