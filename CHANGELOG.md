@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Fix Gradle 6 deployment resulting in build errors when using the aar.
 * Add Danish translation. Thanks @larsnaesbye.
 * Add French translation. Thanks @Tititesouris.
 * Add Polish translation. Thanks @hexmind.
