@@ -4,27 +4,28 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import info.metadude.kotlin.library.roadsigns.RoadSign
+import info.metadude.kotlin.library.roadsigns.demo.databinding.ActivityDemoBinding
 
-class DemoActivity : AppCompatActivity(R.layout.activity_demo), AdapterView.OnItemSelectedListener {
+class DemoActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
-    private val selectionView by lazy { findViewById<Spinner>(R.id.selectionView) }
-    private val roadSignView by lazy { findViewById<RoadSign>(R.id.roadSignView) }
+    private lateinit var binding: ActivityDemoBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        roadSignView.type = RoadSign.Type.EnvironmentalBadge.Green
+        binding = ActivityDemoBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.roadSignView.type = RoadSign.Type.EnvironmentalBadge.Green
         ArrayAdapter.createFromResource(
             this,
             R.array.road_signs_array,
             android.R.layout.simple_spinner_item
         ).also {
             it.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            selectionView.adapter = it
+            binding.selectionView.adapter = it
         }
-        selectionView.onItemSelectedListener = this
+        binding.selectionView.onItemSelectedListener = this
     }
 
     override fun onItemSelected(
@@ -34,7 +35,7 @@ class DemoActivity : AppCompatActivity(R.layout.activity_demo), AdapterView.OnIt
         rowId: Long
     ) {
         val item: String = spinnerView.getItemAtPosition(viewPosition) as String
-        roadSignView.type = item.roadSignType
+        binding.roadSignView.type = item.roadSignType
     }
 
     override fun onNothingSelected(parent: AdapterView<*>) = Unit

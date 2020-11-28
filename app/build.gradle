@@ -24,6 +24,10 @@ android {
     sourceSets {
         main.java.srcDirs += "src/main/kotlin"
     }
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
