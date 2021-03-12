@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use Android plugin for Gradle v.4.1.3.
 * Use Kotlin v.1.4.32.
 
 
