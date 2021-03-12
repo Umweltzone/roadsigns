@@ -66,23 +66,23 @@ task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
 }
 
-task javadoc(type: Javadoc) {
+task javadocJar(type: Jar, dependsOn: dokkaJavadoc) {
     group "publishing"
-    description "Generates javadoc"
-    def paths = android.getBootClasspath()
-    classpath += project.files(paths.join(File.pathSeparator))
-}
-
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    group "publishing"
-    description "Generates javadocJar"
+    description "Generates javadocJar based on Dokka"
     archiveClassifier.set("javadoc")
-    from javadoc.destinationDir
+    from dokkaJavadoc.outputDirectory
 }
 
-javadoc {
-    if (JavaVersion.current().isJava9Compatible()) {
-        options.addBooleanOption("html5", true)
+dokkaJavadoc.configure {
+    moduleName.set("Roadsigns")
+    dokkaSourceSets {
+        named("main") {
+            sourceLink {
+                localDirectory.set(file("roadsigns/src/main/kotlin"))
+                remoteUrl.set(java.net.URL("https://github.com/Umweltzone/roadsigns/blob/master/roadsigns/src/main/kotlin"))
+                remoteLineSuffix.set("#L")
+            }
+        }
     }
 }
 
