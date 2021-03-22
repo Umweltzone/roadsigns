@@ -16,12 +16,14 @@ object Plugins {
         const val android = "3.5.3"
         const val androidMavenPublish = "3.6.3"
         const val bintray = "1.8.4"
+        const val dokka = "1.4.20"
         const val versions = "0.27.0"
     }
 
     const val android = "com.android.tools.build:gradle:${Versions.android}"
     const val androidMavenPublish = "digital.wup:android-maven-publish:${Versions.androidMavenPublish}"
     const val bintray = "com.jfrog.bintray.gradle:gradle-bintray-plugin:${Versions.bintray}"
+    const val dokka = "org.jetbrains.dokka:dokka-gradle-plugin:${Versions.dokka}"
     const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
     const val versions = "com.github.ben-manes:gradle-versions-plugin:${Versions.versions}"
 }
