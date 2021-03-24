@@ -12,11 +12,13 @@ object Plugins {
 
     private object Versions {
         const val android = "4.1.1"
+        const val dokka = "1.4.20"
         const val kotlin = "1.4.20"
         const val versions = "0.36.0"
     }
 
     const val android = "com.android.tools.build:gradle:${Versions.android}"
+    const val dokka = "org.jetbrains.dokka:dokka-gradle-plugin:${Versions.dokka}"
     const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val versions = "com.github.ben-manes:gradle-versions-plugin:${Versions.versions}"
 }

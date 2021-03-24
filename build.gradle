@@ -12,6 +12,7 @@ buildscript {
 
     dependencies {
         classpath Plugins.android
+        classpath Plugins.dokka
         classpath Plugins.kotlin
         classpath Plugins.versions
     }
