@@ -43,6 +43,13 @@ afterEvaluate {
                         developerConnection = project.packageScmDeveloperConnection
                         url = project.packageWebsiteUrl
                     }
+                    developers {
+                        developer {
+                            id = packageDeveloperId
+                            name = packageDeveloperName
+                            email = packageDeveloperEmail
+                        }
+                    }
                 }
 
                 repositories {
