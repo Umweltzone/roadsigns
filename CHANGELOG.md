@@ -6,6 +6,7 @@
 
 ### Changes
 
+* **Important:** Replace Bintray deployment with MavenCentral. New versions will not be available via Bintray/jCenter anymore.
 * Use targetSdkVersion 30, compileSdkVersion 30.
 * Use Android plugin for Gradle v.4.1.3.
 * Use Kotlin v.1.4.32.
