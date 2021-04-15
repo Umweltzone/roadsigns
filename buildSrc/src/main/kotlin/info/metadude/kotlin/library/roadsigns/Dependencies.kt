@@ -11,9 +11,9 @@ object Android {
 object Plugins {
 
     private object Versions {
-        const val android = "4.1.1"
-        const val dokka = "1.4.20"
-        const val kotlin = "1.4.20"
+        const val android = "4.1.3"
+        const val dokka = "1.4.30"
+        const val kotlin = "1.4.32"
         const val versions = "0.36.0"
     }
 
@@ -26,7 +26,7 @@ object Plugins {
 object Libs {
 
     private object Versions {
-        const val annotation = "1.1.0"
+        const val annotation = "1.2.0"
         const val appCompat = "1.2.0"
         const val constraintLayout = "2.0.4"
         const val espresso = "3.3.0"
