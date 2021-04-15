@@ -7,8 +7,9 @@ def propertiesFile = project.rootProject.file("${System.properties['user.home']}
 if (propertiesFile.exists()) {
     properties.load(propertiesFile.newDataInputStream())
 }
-def bintrayUser = properties.getProperty("bintrayUser") ?: System.getenv("BINTRAY_USER")
-def bintrayApiKey = properties.getProperty("bintrayApiKey") ?: System.getenv("BINTRAY_API_KEY")
+def mavenCentralUrl = properties.getProperty("sonatypeRepo") ?: project.sonatypeRepo
+def mavenCentralUserName = properties.getProperty("sonatypeUserName") ?: project.sonatypeUserName
+def mavenCentralPassword = properties.getProperty("sonatypePassword") ?: project.sonatypePassword
 
 afterEvaluate {
     publishing {
@@ -46,11 +47,11 @@ afterEvaluate {
 
                 repositories {
                     maven {
-                        name project.bintrayPublicationName
-                        url = uri(project.bintrayUrl)
+                        name project.mavenCentralPublicationName
+                        url = uri(mavenCentralUrl)
                         credentials {
-                            username = bintrayUser
-                            password = bintrayApiKey
+                            username = mavenCentralUserName
+                            password = mavenCentralPassword
                         }
                     }
                 }
