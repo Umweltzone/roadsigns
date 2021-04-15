@@ -58,6 +58,9 @@ afterEvaluate {
             }
         }
     }
+    signing {
+        sign publishing.publications.release
+    }
 }
 
 task sourcesJar(type: Jar) {
