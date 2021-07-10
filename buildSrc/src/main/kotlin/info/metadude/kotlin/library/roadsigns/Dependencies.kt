@@ -29,8 +29,8 @@ object Libs {
         const val annotation = "1.2.0"
         const val appCompat = "1.3.1"
         const val constraintLayout = "2.0.4"
-        const val espresso = "3.3.0"
-        const val testExtJunit = "1.1.2"
+        const val espresso = "3.4.0"
+        const val testExtJunit = "1.1.3"
         const val vectorDrawable = "1.1.0"
     }
 
