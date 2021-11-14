@@ -14,7 +14,7 @@ object Plugins {
         const val android = "4.1.3"
         const val dokka = "1.4.30"
         const val kotlin = "1.4.32"
-        const val versions = "0.36.0"
+        const val versions = "0.39.0"
     }
 
     const val android = "com.android.tools.build:gradle:${Versions.android}"
