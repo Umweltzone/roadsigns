@@ -1,5 +1,16 @@
 # Road signs changelog
 
+## NEXT
+
+* Not published yet.
+
+### Changes
+
+* Use constraintlayout v.2.1.1.
+* Use Android plugin for Gradle v.4.2.2.
+* Use Kotlin v.1.5.31.
+
+
 ## [v.4.1.0](https://github.com/Umweltzone/roadsigns/releases/tag/v.4.1.0)
 
 * Published: 2021-04-16

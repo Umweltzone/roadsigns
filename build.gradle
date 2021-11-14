@@ -8,6 +8,7 @@ buildscript {
         google()
         mavenCentral()
         jcenter()
+        gradlePluginPortal()
     }
 
     dependencies {
