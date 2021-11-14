@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use constraintlayout v.2.1.1.
 * Use Android plugin for Gradle v.4.2.2.
 * Use Kotlin v.1.5.31.
 
