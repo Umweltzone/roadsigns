@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use targetSdkVersion 31, compileSdkVersion 31.
 * Target JDK 11.
 * Use Android plugin for Gradle v.7.1.2.
 
