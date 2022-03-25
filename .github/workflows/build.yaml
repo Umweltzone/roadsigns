@@ -10,7 +10,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: 'adopt'
-          java-version: '8'
+          java-version: '11'
 
       - name: Build the app
         run: ./gradlew assembleDebug
@@ -40,7 +40,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: 'adopt'
-          java-version: '8'
+          java-version: '11'
 
       - name: Instrumentation Tests
         uses: reactivecircus/android-emulator-runner@v2

@@ -1,47 +1,59 @@
-sudo: false
+dist: focal
 
-dist: trusty
+language: java
 
-language: android
+jdk: openjdk11
 
-jdk: oraclejdk8
+env:
+  global:
+    # Android command line tools, check for updates here https://developer.android.com/studio/#command-tools
+    - COMMAND_LINE_TOOLS_VERSION=7583922
+    - ANDROID_HOME=$HOME/android-sdk
+    - TARGET_SDK_VERSION=`grep -H targetSdkVersion buildSrc/src/main/kotlin/info/metadude/kotlin/library/roadsigns/Dependencies.kt | grep -Po "\d+"`
+    - BUILD_TOOLS_VERSION=`grep -H buildToolsVersion buildSrc/src/main/kotlin/info/metadude/kotlin/library/roadsigns/Dependencies.kt | grep -Po "\d+.\d+.\d+"`
+
+branches:
+  except:
+    - /^v\..*$/ # Exclude version tags
 
 notifications:
   email: true
 
-before_script:
-  - android-wait-for-emulator
-  - adb shell input keyevent 82
-
-install:
-  - ./gradlew clean assembleDebug testDebug assembleAndroidTest --stacktrace -PdisablePreDex
-
-script:
-  - ./gradlew testDebug connectedCheck --stacktrace -PdisablePreDex
-
 before_cache:
-  - rm -f  $TRAVIS_BUILD_DIR/.gradle/caches/modules-2/modules-2.lock
-  - rm -fr $TRAVIS_BUILD_DIR/.gradle/caches/*/plugin-resolution/
+  # Do not cache a few Gradle files/directories (see https://docs.travis-ci.com/user/languages/java/#caching)
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
 
 cache:
   directories:
-    - $TRAVIS_BUILD_DIR/.gradle/caches/
-    - $TRAVIS_BUILD_DIR/.gradle/wrapper/
-    - $TRAVIS_BUILD_DIR/.android/build-cache
+    # Android
+    - $HOME/android-cmdline-tools
+    - $HOME/android-sdk
+    - $HOME/.android/build-cache
 
-before_install:
-  # Reduce memory usage / avoid OutOfMemoryError with Gradle 4.10.3+
-  - echo "org.gradle.jvmargs=-Xmx2048m -Xms512m -XX:MaxPermSize=768m" >> gradle.properties
-  # Make Gradle wrapper executable.
+    # Gradle
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+
+install:
+  - mkdir -p $HOME/android-cmdline-tools
+  # Download and unzip the Android command line tools (if not already there thanks to the cache mechanism)
+  - if test ! -e $HOME/android-cmdline-tools/cmdline-tools.zip ; then curl "https://dl.google.com/android/repository/commandlinetools-linux-${COMMAND_LINE_TOOLS_VERSION}_latest.zip" > $HOME/android-cmdline-tools/cmdline-tools.zip ; fi
+  - unzip -qq -n $HOME/android-cmdline-tools/cmdline-tools.zip -d $HOME/android-cmdline-tools
+  - echo y | $HOME/android-cmdline-tools/cmdline-tools/bin/sdkmanager --sdk_root=$HOME/android-sdk "platform-tools"
+  - echo y | $HOME/android-cmdline-tools/cmdline-tools/bin/sdkmanager --sdk_root=$HOME/android-sdk "build-tools;${BUILD_TOOLS_VERSION}"
+  - echo y | $HOME/android-cmdline-tools/cmdline-tools/bin/sdkmanager --sdk_root=$HOME/android-sdk "platforms;android-${TARGET_SDK_VERSION}"
+
+before_script:
+  # To see if the correct values have been extracted.
+  - echo TARGET_SDK_VERSION=$TARGET_SDK_VERSION
+  - echo BUILD_TOOLS_VERSION=$BUILD_TOOLS_VERSION
+
+  # Ensure Gradle wrapper is executable
   - chmod +x gradlew
-  # Install SDK license so Android Gradle plugin can install dependencies.
-  - mkdir "$ANDROID_HOME/licenses" || true
-  - echo "d56f5187479451eabf01fb78af6dfcb131a6481e" > "$ANDROID_HOME/licenses/android-sdk-license"
-  - echo "24333f8a63b6825ea9c5514f83c2829b004d1fee" >> "$ANDROID_HOME/licenses/android-sdk-license"
-  # Install the rest of tools (e.g., avdmanager)
-  - sdkmanager tools
-  # Install the system image
-  - sdkmanager "system-images;android-18;default;armeabi-v7a"
-  # Create and start emulator for the script. Meant to race the install task.
-  - echo no | avdmanager create avd --force -n test -k "system-images;android-18;default;armeabi-v7a"
-  - $ANDROID_HOME/emulator/emulator -avd test -no-audio -no-window &
+
+  # Reduce memory usage / avoid OutOfMemoryError with Gradle 4.10.3
+  - echo "org.gradle.jvmargs=-Xmx2048m -Xms512m -XX:MaxPermSize=768m" >> gradle.properties
+
+script:
+  - ./gradlew clean testDebug assembleDebug -PdisablePreDex

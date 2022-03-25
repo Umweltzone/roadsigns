@@ -1,5 +1,15 @@
 # Road signs changelog
 
+## NEXT
+
+* Not published yet
+
+### Changes
+
+* Target JDK 11.
+* Use Android plugin for Gradle v.7.1.2.
+
+
 ## [v.4.2.0](https://github.com/Umweltzone/roadsigns/releases/tag/v.4.2.0)
 
 * Published: 2021-11-14
