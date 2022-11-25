@@ -3,7 +3,7 @@
 package info.metadude.kotlin.library.roadsigns
 
 object Android {
-    const val buildToolsVersion = "30.0.3"
+    const val buildToolsVersion = "33.0.1"
     const val compileSdkVersion = 31
     const val minSdkVersion = 14
     const val targetSdkVersion = 31
