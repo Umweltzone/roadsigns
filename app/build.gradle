@@ -5,6 +5,8 @@ apply plugin: "com.android.application"
 apply plugin: "kotlin-android"
 
 android {
+    namespace "info.metadude.kotlin.library.roadsigns.demo"
+
     buildToolsVersion Android.buildToolsVersion
     compileSdk Android.compileSdkVersion
 
