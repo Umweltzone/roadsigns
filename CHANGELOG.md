@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use Kotlin v.1.7.21.
 * Use constraintlayout v.2.1.4.
 
 
