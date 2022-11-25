@@ -27,7 +27,7 @@ object Plugins {
 object Libs {
 
     private object Versions {
-        const val annotation = "1.3.0"
+        const val annotation = "1.5.0"
         const val appCompat = "1.4.1"
         const val constraintLayout = "2.1.3"
         const val espresso = "3.5.0"
