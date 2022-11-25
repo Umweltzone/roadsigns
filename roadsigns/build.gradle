@@ -8,13 +8,13 @@ apply plugin: "signing"
 apply plugin: "org.jetbrains.dokka"
 
 android {
+    namespace "info.metadude.kotlin.library.roadsigns"
+
     compileSdk Android.compileSdkVersion
 
     defaultConfig {
         minSdk Android.minSdkVersion
         targetSdk Android.targetSdkVersion
-        versionCode Integer.valueOf(project.versionCode)
-        versionName project.versionName
         vectorDrawables.useSupportLibrary = true
     }
 
