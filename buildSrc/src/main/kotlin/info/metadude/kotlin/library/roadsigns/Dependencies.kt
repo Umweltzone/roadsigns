@@ -12,7 +12,7 @@ object Android {
 object Plugins {
 
     private object Versions {
-        const val android = "7.3.1"
+        const val android = "7.4.2"
         const val dokka = "1.8.10"
         const val kotlin = "1.8.10"
         const val versions = "0.46.0"
