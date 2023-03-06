@@ -3,19 +3,19 @@
 package info.metadude.kotlin.library.roadsigns
 
 object Android {
-    const val buildToolsVersion = "33.0.1"
-    const val compileSdkVersion = 31
+    const val buildToolsVersion = "33.0.2"
+    const val compileSdkVersion = 33
     const val minSdkVersion = 14
-    const val targetSdkVersion = 31
+    const val targetSdkVersion = 33
 }
 
 object Plugins {
 
     private object Versions {
-        const val android = "7.3.1"
-        const val dokka = "1.7.20"
-        const val kotlin = "1.7.21"
-        const val versions = "0.44.0"
+        const val android = "7.4.2"
+        const val dokka = "1.8.10"
+        const val kotlin = "1.8.10"
+        const val versions = "0.46.0"
     }
 
     const val android = "com.android.tools.build:gradle:${Versions.android}"
@@ -27,11 +27,11 @@ object Plugins {
 object Libs {
 
     private object Versions {
-        const val annotation = "1.5.0"
-        const val appCompat = "1.4.2" // compileSdk 32 is required as of 1.5.0
+        const val annotation = "1.6.0"
+        const val appCompat = "1.6.1"
         const val constraintLayout = "2.1.4"
-        const val espresso = "3.5.0"
-        const val testExtJunit = "1.1.4"
+        const val espresso = "3.5.1"
+        const val testExtJunit = "1.1.5"
         const val vectorDrawable = "1.1.0"
     }
 

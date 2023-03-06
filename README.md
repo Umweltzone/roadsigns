@@ -1,4 +1,4 @@
-[![Travis CI Build Status](https://travis-ci.com/Umweltzone/roadsigns.svg?branch=master)](https://travis-ci.com/Umweltzone/roadsigns) [![GitHub Actions Build Status](https://github.com/Umweltzone/roadsigns/actions/workflows/build.yaml/badge.svg)](https://github.com/Umweltzone/roadsigns/actions/workflows/build.yaml) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/info.metadude.kotlin.library.roadsigns/roadsigns/badge.svg)](https://maven-badges.herokuapp.com/maven-central/info.metadude.kotlin.library.roadsigns/roadsigns) [![JitPack](https://jitpack.io/v/Umweltzone/roadsigns.svg)][jitpack-roadsigns] [![Apache License](http://img.shields.io/badge/license-Apache%20License%202.0-lightgrey.svg)](http://choosealicense.com/licenses/apache-2.0/)
+[![Travis CI Build Status](https://app.travis-ci.com/Umweltzone/roadsigns.svg?branch=master)](https://app.travis-ci.com/Umweltzone/roadsigns) [![GitHub Actions Build Status](https://github.com/Umweltzone/roadsigns/actions/workflows/build.yaml/badge.svg)](https://github.com/Umweltzone/roadsigns/actions/workflows/build.yaml) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/info.metadude.kotlin.library.roadsigns/roadsigns/badge.svg)](https://maven-badges.herokuapp.com/maven-central/info.metadude.kotlin.library.roadsigns/roadsigns) [![JitPack](https://jitpack.io/v/Umweltzone/roadsigns.svg)][jitpack-roadsigns] [![Apache License](http://img.shields.io/badge/license-Apache%20License%202.0-lightgrey.svg)](http://choosealicense.com/licenses/apache-2.0/)
 
 # Road signs library
 
@@ -70,7 +70,7 @@ build the sources directly from [this repository][github-roadsigns].
 
 ## License
 
-    Copyright 2019-2022 Tobias Preuss
+    Copyright 2019-2023 Tobias Preuss
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
