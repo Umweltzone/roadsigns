@@ -30,8 +30,8 @@ object Libs {
         const val annotation = "1.5.0"
         const val appCompat = "1.4.2" // compileSdk 32 is required as of 1.5.0
         const val constraintLayout = "2.1.4"
-        const val espresso = "3.5.0"
-        const val testExtJunit = "1.1.4"
+        const val espresso = "3.5.1"
+        const val testExtJunit = "1.1.5"
         const val vectorDrawable = "1.1.0"
     }
 
